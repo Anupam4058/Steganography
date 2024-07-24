@@ -1,0 +1,1 @@
+        # r.seek(-len(hexEnd),2)
