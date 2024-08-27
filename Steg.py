@@ -25,9 +25,9 @@ def MsgDelete():
                 r.truncate()
                 print("Message Deleted")
             else:
-                print("No recent message to delete, embed a message using MsgEmbed or clear messaeg with MsgClear.")
-    except:
-        print("No recent message to delete, embed a message using MsgEmbed or clear messaeg with MsgClear.")
+                print("No recent message to delete, embed a message using MsgEmbed or clear message with MsgClear.")
+    except Exception:
+        print("No recent message to delete, embed a message using MsgEmbed or clear message with MsgClear.")
 # def MsgClear():
 #     with open("The jump.png","rb+") as r:
 #         r.seek(-len(hexEnd),2)
@@ -52,3 +52,8 @@ def MsgClear():
         r.seek(-(end-start),2)
         r.truncate()
     print("Message has been cleared")
+    
+def DestroyIMG():
+    with open("The jump.png","rb+") as r:
+        r.truncate()
+    print("The image along with it's contents has been destroyed!")
