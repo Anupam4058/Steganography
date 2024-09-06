@@ -28,20 +28,6 @@ def MsgDelete():
                 print("No recent message to delete, embed a message using MsgEmbed or clear message with MsgClear.")
     except Exception:
         print("No recent message to delete, embed a message using MsgEmbed or clear message with MsgClear.")
-# def MsgClear():
-#     with open("The jump.png","rb+") as r:
-#         r.seek(-len(hexEnd),2)
-#         checkString = r.read()
-#         if(checkString != hexEnd):
-#             content = r.read()
-#             offset = content.index(hexEnd)
-#             start = r.seek(offset + len(hexEnd))
-#             end = r.seek(-1,2)+1
-#             r.seek(-(end-start),2)
-#             r.truncate()
-#             print("Message has been cleared!")
-#         else:
-#             print("No Message to delete, embed a message using MsgEmbed")
 def MsgClear():
     with open("The jump.png","rb+") as r:
         content = r.read()
