@@ -4,7 +4,6 @@ hexEnd = b'\x00\x00\x00\x00\x49\x45\x4E\x44\xAE\x42\x60\x82'
 
 def MsgEmbed(itext):
     global message 
-    #inputString = input("Give an input: ")
     message = bytes(itext, 'utf-8') 
     with open("The jump.png",'ab') as f:
         f.write(message)
@@ -58,13 +57,13 @@ if st.button("Embed"):
 with col1:
     if st.button("Read"):
         finalText = MsgRead()
+# with col2:
+#     if st.button("Delete"):
+#         finalText = MsgDelete()
 with col2:
-    if st.button("Delete"):
-        finalText = MsgDelete()
-with col3:
     if st.button("Clear"):
         finalText = MsgClear()
-with col4:
+with col3:
     if st.button("Destroy"):
         finalText = DestroyIMG()
 st.success(finalText)
